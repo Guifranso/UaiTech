@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color:#999999;
+  text-decoration: none;
+}
+
+html, body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+/* Pagina Sobre */
+.criadores{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.criadores li{
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    
+}
+
+.criadores p{
+    color: darkblue;
+}
+.criadores img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow:2.5px 2.5px 10px 0 #000000;
+}
+.criadores li:hover {
+    border-color: grey;
+}
+.criadores:active{
+    box-shadow: 10 50 0 0 #000000;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content:space-between;
+  padding: 0 3rem;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  box-shadow: 4px 0px 15px #AAAAAA40;
+  background: white;
+  height: 5rem;
+  font-size: 20px;
+}
+.headerItens {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+.headerItens > a {
+  display: flex;
+  padding: 0 1rem;
+}
+.headerItens > a:hover {
+  transition: 200ms;
+  opacity: 0.5;
+}
+.headerLink {
+  color: #449944;
+  width:fit-content;
+}
+.logo {
+  color: #449944;
+  font-size: 120%;
+  font-weight: bold;
+}
+.searchBar {
+  border: solid 1px #449944;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  font-size: 110%;
+}
+.searchButton {
+  height: 100%;
+  padding: 0.6rem;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  font-size: 80%;
+}
+.searchButton:hover {
+  color: #449944;
+  font-weight: bold;
+  cursor: pointer;
+}
+.searchInput {
+  height: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 3rem;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  box-shadow: 4px 0px 15px #AAAAAA40;
+  background: white;
+  font-size: 20px;
+}
+
+.footerList {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+.footerList > li {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0.3rem 0;
+}
+.footerList > li:hover {
+  transition: 200ms;
+  opacity: 0.5;
+}
+.copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+  }

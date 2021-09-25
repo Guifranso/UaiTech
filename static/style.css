@@ -6,6 +6,7 @@
   font-family: 'Nunito', sans-serif;
   color:#999999;
   text-decoration: none;
+  outline: none;
 }
 html, body {
     background-color: rgb(255, 255, 255);
@@ -16,6 +17,13 @@ html, body {
   min-height: 100vh;
 }
 /* Pagina Produtos */
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .item {
   display: flex;
@@ -120,19 +128,23 @@ header {
   font-weight: bold;
 }
 .searchBar {
-  border: solid 1px #449944;
+  display: flex;
+  flex-direction: row;
+  border: solid 1.5px #449944;
   box-sizing: border-box;
   border-radius: 5px; 
-  font-size: 110%;
+  font-size: 1rem;
+  align-items: center;
+  height: 2rem;
 }
 .searchButton {
-  height: 100%;
-  padding: 0.6rem;
   background-color: transparent;
   border: none;
   box-sizing: border-box;
-  font-size: 80%;
+  margin: auto 0;
+  padding-top: 3px;
 }
+
 .searchButton:hover {
   color: #449944;
   font-weight: bold;
@@ -140,11 +152,12 @@ header {
 }
 .searchInput {
   height: 100%;
-  padding: 0.6rem;
+  padding: .5rem;
   border: none;
-  border-radius: 5px;
   outline: none;
-  font-size: 80%;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 main {
   box-sizing: border-box;
@@ -180,4 +193,32 @@ footer {
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
-  }
+}
+
+.cadastroTitulo {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+.cadastrar {
+  background-color: #449944;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  color: white; 
+  border: none;
+  border-radius:5px;
+  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 100%;
+}
+.cadastrar:hover {
+  background-color: #2f702f;
+  transition: 200ms;
+  cursor: pointer;
+}
+.cadastroInput {
+  border-radius: 5px;
+  border: solid 1px #999999;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}

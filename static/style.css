@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  color:#999999;
+  color:#5F5454;
   text-decoration: none;
   outline: none;
 }
@@ -38,6 +38,10 @@ html, body {
   margin: 2rem;
   padding: 1rem;
   justify-content: space-between;
+}
+.item:hover {
+  transform: scale(1.02);
+  transition: 200ms;
 }
 .itemTitulo {
   margin: 1rem 0;
@@ -119,18 +123,18 @@ header {
   opacity: 0.5;
 }
 .headerLink {
-  color: #449944;
+  color: #1B791B;
   width:fit-content;
 }
 .logo {
-  color: #449944;
+  color: #1B791B;
   font-size: 120%;
   font-weight: bold;
 }
 .searchBar {
   display: flex;
   flex-direction: row;
-  border: solid 1.5px #449944;
+  border: solid 1.5px #1B791B;
   box-sizing: border-box;
   border-radius: 5px; 
   font-size: 1rem;
@@ -146,7 +150,7 @@ header {
 }
 
 .searchButton:hover {
-  color: #449944;
+  color: #1B791B;
   font-weight: bold;
   cursor: pointer;
 }
@@ -199,8 +203,8 @@ footer {
   font-size: 150%;
   margin-bottom: 1rem;
 }
-.cadastrar {
-  background-color: #449944;
+.cadastrar-se {
+  background-color: #1B791B;
   box-shadow: 4px 4px 2px #AAAAAA40;
   color: white; 
   border: none;
@@ -208,7 +212,20 @@ footer {
   margin: 0.5rem 0;
   margin-bottom: 2rem;
   padding: 0.5rem;
-  font-size: 100%;
+  font-size: 110%;
+  font-weight: bold;
+}
+.cadastrar {
+  background-color: #1B791B;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  color: white; 
+  border: none;
+  border-radius:5px;
+  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 110%;
+  font-weight: bold;
 }
 .cadastrar:hover {
   background-color: #2f702f;
@@ -221,4 +238,12 @@ footer {
   padding: 0.1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+.sobreTitulo {
+  font-size: 180%;
+  margin: 2rem 0;
+}
+.sobreTexto {
+  font-size: 150%;
+  width: 70%;
 }

@@ -1,5 +1,11 @@
+<!-- <?php
+require_once 'classes.php';
+$p = new Pessoas("proj","localhost","root","");
+
+?> -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +13,11 @@
     <link rel="stylesheet" href="../static/reset.css">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="../static/scroll.css">
-    <link rel="shortcut icon" href="../banco de img/favicon-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="banco de img/favicon.ico" type="image/x-icon">
 
-    <title>Sobre Nós</title>
+    <title>Login</title>
 </head>
+
 <body>
     <div class="primeiraTela">
         <header>
@@ -36,36 +43,19 @@
                 <a class="headerItem" href="cadastro.html">Cadastro</a>
             </div>
         </header>
-
-   <main>
-            <ul class="criadores">
-              <li>
-                  <img src="../banco de img/fotogui.jpg" alt=""> <!-- Imagem da Eduarda-->
-                  <h2>Eduarda</h2>
-                  <p>Negocios</p>
-              </li>
-              <li>
-                <img src="../banco de img/fotofab.jpg" alt=""> <!-- Imagem do Fabricio-->
-                <h2>Fabricio</h2>
-                <p>Dev. BackEnd</p>
-            </li>
-            <li>
-                <img src="../banco de img/fotogui.jpg" alt=""> <!-- Imagem do Guilherme-->
-                <h2>Guilherme</h2>
-                <p>Dev. FrontEnd</p>
-            </li>
-            <li>
-                <img src="../banco de img/fotogui.jpg" alt=""> <!-- Imagem do Luis Felipe-->
-                <h2>Luis Felipe</h2>
-                <p>Marketing</p>
-            </li>
-            <li>
-                <img src="../banco de img/fotogui.jpg" alt=""> <!-- Imagem do Marco Aurelio-->
-                <h2>Marco Aurelio</h2>
-                <p>Dev. BackEnd</p>
-            </li>
-            </ul>
-    </main>
+        <main>
+            <form class="login" method="POST" action="login.php">
+                <h2 class="cadastroTitulo">Acesso ao sistema</h2>
+                <label for="usuario">Nome</label>
+                <input class="cadastroInput" type="text" name="usuario" id="usuario">
+                <br>
+                <label for="senha">Senha</label>
+                <input class="cadastroInput" type="password" name="senha" id="senha" size="10">
+                <br>
+                <input class="cadastrar" type="submit" name="acessar" value="Acessar">
+                <a class="cadastrar-se" href="http://localhost/cadastro.php"> Cadastre-se </a>
+            </form>
+        </main>
     </div>
     <footer>
         <ul class="footerList">
@@ -76,6 +66,6 @@
         </ul>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

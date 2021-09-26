@@ -1,5 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(207, 207, 207);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153);
+}
+/*-----------------------------------------------------------------------------------------------------------*/
 *{
   padding: 0;
   margin: 0;
@@ -10,12 +74,47 @@
 }
 html, body {
     background-color: rgb(255, 255, 255);
+    width: 100%;
     height: 100%;
+}
+main {
+  box-sizing: border-box;
+  padding: 4rem;
+}
+footer {
+  width: 100%;
+  padding: 2rem 3rem;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  box-shadow: 4px 0px 15px #AAAAAA40;
+  background: white;
+  font-size: 20px;
 }
 .primeiraTela {
   width: 100%;
   min-height: 100vh;
 }
+.homeDiv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sobreTitulo {
+  font-size: 180%;
+  margin: 2rem 0;
+}
+.sobreTexto {
+  font-size: 125%;
+}
+.secaoSobre {
+  font-size: 1.2rem;
+  width: 70%;
+  line-height: 2rem;
+} 
+
 /* Pagina Produtos */
 
 .produtos {
@@ -28,8 +127,8 @@ html, body {
 .item {
   display: flex;
   text-align: left;
-  width: 15%;
-  height: 20rem;
+  width: 18rem; 
+  height: 25rem;
   flex-direction: column;
   box-sizing: border-box;
   border: solid #aaaaaa30 1px;
@@ -128,7 +227,7 @@ header {
 }
 .logo {
   color: #1B791B;
-  font-size: 120%;
+  font-size: 150%;
   font-weight: bold;
 }
 .searchBar {
@@ -163,20 +262,7 @@ header {
   border-radius: 5px;
   box-sizing: border-box;
 }
-main {
-  box-sizing: border-box;
-  padding: 2rem;
-}
-footer {
-  width: 100%;
-  padding: 2rem 3rem;
-  align-items: center;
-  box-sizing: border-box;
-  margin-bottom: 2rem;
-  box-shadow: 4px 0px 15px #AAAAAA40;
-  background: white;
-  font-size: 20px;
-}
+
 .footerList {
   margin: 0 auto;
   width: fit-content;
@@ -233,17 +319,82 @@ footer {
   cursor: pointer;
 }
 .cadastroInput {
+  height: 1.7 rem;
+  width: 25rem;
   border-radius: 5px;
   border: solid 1px #999999;
-  padding: 0.1rem;
+  padding: 0.4rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
-.sobreTitulo {
-  font-size: 180%;
-  margin: 2rem 0;
+
+
+/* Página de login */
+
+.formularioLogin {
+  font-size: 1.2rem;
 }
-.sobreTexto {
+.alimentoImg {
+  border: solid 2px #449944;
+  border-radius: 5px;
+  max-height: 26rem;
+  width: 35rem;
+  margin-right: 2rem;
+}
+.alimentoTitulo {
+  font-size: 200%;
+  margin-bottom: 2rem;
+}
+.alimentoTitulo2{
   font-size: 150%;
-  width: 70%;
+  margin-bottom: 2rem;
+}
+.alimentoInfo {
+  font-size: 125%;
+  margin-bottom: 1rem;
+}
+.alimentoDiv {
+  display: flex;
+  flex-direction: row;
+}
+.alimentoDivAux {
+  display: flex;
+  flex-direction: column;
+}
+.alimentoDivSecundaria {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+.alimentoTabela {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  font-size: 125%;
+}
+.alimentoBeneficios {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.alimentoTabelaTr > td {
+  padding: 0.3rem 1.4rem;
+  border: #449944 2px solid;
+}
+
+@media only screen and (max-width: 800px){
+  .logo {
+    display: none;
+  }
+  .criadores {
+    flex-direction: column;
+  }
+  .criadores > li {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }

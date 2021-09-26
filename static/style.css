@@ -443,4 +443,11 @@ header {
     margin-right: 0;
     box-sizing: border-box;
   }
+  .alimentoTabela {
+    width: 100%;
+  }
+  .alimentoTabelaTr > td {
+    width: 100%;
+    padding: 5px;
+  }
 }

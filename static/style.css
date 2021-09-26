@@ -387,14 +387,60 @@ header {
 }
 
 @media only screen and (max-width: 800px){
+  * {
+    font-size: 85%;
+  }
+  header {
+    padding: 5px;
+  }
+  #botaoCadastro {
+    display: none;
+  }
+  .headerItens {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .headerItens > a {
+    padding: 8px;
+  }
+  .searchBar {
+    display: none;
+  }
+  .alimentoImg {
+    width: 100%;
+    margin: 0;
+  }
+  main {
+    padding: 0;
+  }
+  .homeDiv {
+    flex-direction: column;
+  }
   .logo {
     display: none;
   }
   .criadores {
     flex-direction: column;
+    width: 90%;
   }
   .criadores > li {
     width: 100%;
     margin-bottom: 2rem;
+  }
+  .alimentoDiv {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .login {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .cadastroInput {
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 }
